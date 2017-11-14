@@ -1,0 +1,38 @@
+.markdown-block {
+
+	a {
+		font-weight: 400;
+		color: $primary-color !important;
+	}
+
+	.markdown_folder {
+		@include font-size(xs);
+		border-radius: 5px;
+		display: inline-block;
+		padding: 1px 10px !important;
+		background: $code-background !important;
+		color: #91cef5;
+		position: relative;
+		font-family: 'Source Code Pro', monospace;
+
+		&:before {
+			font-size: 18px;
+			content: $fa-var-folder;
+			@include fa-icon()
+			margin: -2px 5px -5px -4px;
+		}
+	}
+
+	li {
+		list-style-type: circle;
+		margin-left: 18px;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	a {
+		text-decoration: underline !important;
+	}
+}

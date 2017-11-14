@@ -1,0 +1,64 @@
+{{#>body}}
+
+	<div class="screen veil gradient" style="background-image: url('{{background_video_poster}}')">
+			<video autoplay loop muted class="fullvideo">
+				<source src="{{background_video}}" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+			</video>
+
+			<header>
+				<div class="logo" >
+					<a href="/">{{>logo}}</a>
+				</div>
+				{{>mainmenu}}
+
+				<div class = "text-center">
+    	        <h5>
+                	<a href="bigdata/">BigData</a> &nbsp&middot
+                	<a href="nlp/">NLP</a> &nbsp&middot
+                	<a href="knowledgeGraph/">Knowledge Graph</a>
+        	    </h5>
+        		</div>
+
+				<div class="clearfix"></div>
+			</header>
+
+
+			<div class="screen-padder text-center dark full middle" style="top:20%; margin:0 auto;">
+
+				<div class="wedge-3x"></div>
+				<h1 class="short large">{{heading}}</h1>
+				<h2 class="short">{{tagline}}</h2>
+				<div class="badges-holder">
+					{{>badges}}
+				</div>
+
+				<div class="demo-button-area">
+					<div class="wedge-3x"></div>
+					<a href="http://mirror.endurojs.com/" target="_blank" class="btn"><bold>Free API Key</bold></a>
+					<a href="/docs/hello-world" class="btn accent"><bold>Try The Demo</bold></a>
+				</div>
+			</div>
+
+			<footer class="text-center dark">
+					<a {{{ternary new_window 'target="_blank"'}}} href="themes">HyperGraph &copy 2017</a>   &middot   
+					<a {{{ternary new_window 'target="_blank"'}}} href="privacy">Privacy & Legal</a>   &middot   
+					<a {{{ternary new_window 'target="_blank"'}}} href="contact">Contact</a>   &middot   
+					<a {{{ternary new_window 'target="_blank"'}}} href="careers">Careers</a>   &middot   
+					<a {{{ternary new_window 'target="_blank"'}}} href="forums">Forums</a>   &middot   
+					<a {{{ternary new_window 'target="_blank"'}}} href="locations">Locations</a>   
+			</footer>
+
+	</div>
+
+		<script type="text/javascript">
+			ga('send', 'event', 'index_background_image', 'visit', 'newyorkvideo')
+
+			var buttons = document.querySelectorAll('.demo-button-area .btn')
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].addEventListener('click', function () {
+					ga('send', 'event', 'index_background_image', 'goal', 'newyorkvideo')
+				})
+			}
+		</script>
+
+{{/body}}

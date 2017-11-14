@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>enduro.js - Enduro themes</title>
+
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/zenburn.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/assets/img/favicon//manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/assets/img/favicon//ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">		<meta name="description" content="Code-only, no-clicking, flat-file, node.js cms for professionals. With everything needed - Sass, iconfont generator, spritesheet generator, templates...">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-81822746-2', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</head>
+	<body>
+			<div class="wedge-5x"></div>
+			<div class="page-container">
+				<div class="panel">
+		
+					<a class="back" href="/docs"><i class="fa fa-angle-left"></i>Back to topic list</a>
+		
+					<div class="row">
+						<div class="col-md-9">
+							<h1>Enduro themes</h1>
+							<div class="markdown-block"><p>Enduro.js themes are the best way to get you up and running as fast as possible. They are also great first contact to enduro.js since you get to see the finished product, which you can then just tweak to your liking.</p>
+		<p>To see which themes are available, just visit <a href="/themes">Theme manager homepage</a>.</p>
+		<p><img src="https://s3-eu-west-1.amazonaws.com/enduro.website/direct_uploads/1487880073_themes_intro.jpg" alt=""></p>
+		<h2 id="getting-started-with-enduro-js-themes">Getting started with enduro.js themes</h2>
+		<p>First you have to make sure you have node.js installed on your machine. Second prerequisite is having enduro.js installed globally (just run <code>npm i enduro -g</code>).</p>
+		<h2 id="create-a-project-out-of-a-theme">Create a project out of a theme</h2>
+		<p>To start just run:</p>
+		<pre><code class="lang-bash">$ enduro theme mirror
+		</code></pre>
+		<p>This will find a <strong>mirror</strong> theme, download it, install its npm and bower dependencies and start enduro.js. Then you can just go to localhost:5000/admin to put in your content and make finished website</p>
+		<p><img src="https://s3-eu-west-1.amazonaws.com/enduro.website/direct_uploads/1487936465_theme_cli_screenshot.png" alt=""></p>
+		<h2 id="how-to-deploy-your-page">How to deploy your page</h2>
+		<p>Once you fill you content there are two ways you can make the page accessible:</p>
+		<h3 id="static-hosting">Static hosting</h3>
+		<p>enduro.js <a href="/docs/static-pages">pregenerates static html files</a>, which you can just upload to a server and serve statically. No node.js required. Some providers even allows you to host a static page for free - check out <a href="https://pages.github.com/">github pages</a></p>
+		<h3 id="node-js-dynamic-hosting">Node.js dynamic hosting</h3>
+		<p>This will run enduro on a server and provide you with same admin functionality as if you were using localhost. I suggest you use heroku for this <a href="/docs/heroku">Heroku</a>. It&#39;s affordable and easy to use.</p>
+		<h2 id="creating-enduro-js-themes">Creating enduro.js themes</h2>
+		<p>enduro.js theme is just an enduro.js project made in a general enough way so it can be used by other people just by changing the content. Everybody is more than welcome to contribute by creating a pull request to <a href="https://github.com/Gottwik/enduro_website/blob/master/cms/global/theme_manager/themes.js">Github repository</a> of this website. The file is quite self-explanatory.</p>
+		</div>
+						</div>
+						<div class="col-md-3">
+							<div class="docs-list-placeholder"></div>
+							<ul class="docs-list">
+									<li class="side-menu-item side-menu-getting-started-with-enduro-js-themes side-level-2">
+										<a href="#getting-started-with-enduro-js-themes">Getting started with enduro.js themes</a>
+									</li>
+									<li class="side-menu-item side-menu-create-a-project-out-of-a-theme side-level-2">
+										<a href="#create-a-project-out-of-a-theme">Create a project out of a theme</a>
+									</li>
+									<li class="side-menu-item side-menu-how-to-deploy-your-page side-level-2">
+										<a href="#how-to-deploy-your-page">How to deploy your page</a>
+									</li>
+									<li class="side-menu-item side-menu-static-hosting side-level-3">
+										<a href="#static-hosting">Static hosting</a>
+									</li>
+									<li class="side-menu-item side-menu-node-js-dynamic-hosting side-level-3">
+										<a href="#node-js-dynamic-hosting">Node.js dynamic hosting</a>
+									</li>
+									<li class="side-menu-item side-menu-creating-enduro-js-themes side-level-2">
+										<a href="#creating-enduro-js-themes">Creating enduro.js themes</a>
+									</li>
+							</ul>
+						</div>
+					</div>
+		
+					<a class="back" href="/docs"><i class="fa fa-angle-left"></i>Back to topic list</a>
+		
+				</div>
+			</div>
+		
+		
+		<script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script>
+	</body>
+
+</html>

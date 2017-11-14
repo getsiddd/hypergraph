@@ -1,0 +1,15 @@
+h1 {
+	@include font-size(sm);
+	font-weight: bold;
+	margin: 30px 0 10px 0;
+	line-height: 1;
+
+	// modifiers
+	&.short {
+		margin: 0;
+	}
+
+	&.large {
+		@include font-size(md);
+	}
+}

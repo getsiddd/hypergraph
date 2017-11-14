@@ -1,0 +1,18 @@
+.page-container {
+	padding: 0 100px;
+	max-width: 1400px;
+	margin: 0 auto;
+
+	@include media-breakpoint-down(sm) {
+		padding: 0 20px;
+	}
+
+	// modifiers
+	&.padded {
+		padding: 50px 70px;
+
+		@include media-breakpoint-down(sm) {
+			padding: 50px 20px;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+.screen {
+	width: 100vw;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: top center;
+	position: fixed;
+
+	// modifiers
+	&.black {
+		background-color: $black;
+	}
+
+	&.blue {
+		background-color: $primary-color;
+		color: $white;
+	}
+
+	&.colored {
+		background-color: $primary-color;
+		color: $white;
+		border-top: 5px solid $secondary-color;
+
+		a {
+			color: lighten(saturate($primary-color, 100%), 50%);
+			text-decoration: underline;
+		}
+	}
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+	}
+
+
+	&.below_header {
+		min-height: calc(100vh - #{$header-height});
+		height: calc(100vh - #{$header-height});
+		margin-top: $header-height;
+	}
+
+}
+
+.fixed-screen-holder {
+	height: 100vh;
+}

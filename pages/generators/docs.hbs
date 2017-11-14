@@ -1,0 +1,31 @@
+{{#>body title=title}}
+	<div class="wedge-5x"></div>
+	<div class="page-container">
+		<div class="panel">
+
+			<a class="back" href="/docs"><i class="fa fa-angle-left"></i>Back to topic list</a>
+
+			<div class="row">
+				<div class="col-md-9">
+					<h1>{{title}}</h1>
+					<div class="markdown-block">{{{abstracted_content.marked_doc}}}</div>
+				</div>
+				<div class="col-md-3">
+					<div class="docs-list-placeholder"></div>
+					<ul class="docs-list">
+						{{#each abstracted_content.contents}}
+							<li class="side-menu-item side-menu-{{link}} side-level-{{level}}">
+								<a href="#{{link}}">{{heading}}</a>
+							</li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+
+			<a class="back" href="/docs"><i class="fa fa-angle-left"></i>Back to topic list</a>
+
+		</div>
+	</div>
+
+
+{{/body}}

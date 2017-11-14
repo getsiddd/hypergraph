@@ -1,0 +1,57 @@
+a {
+
+	&:visited,
+	&:link {
+		text-decoration: none;
+		color: inherit;
+
+		i {
+			@include font-size(icon2x, true);
+			position: relative;
+			top: 7px;
+			margin-right: 10px;
+			transition: transform $standard-transition;
+
+			&.small {
+				@include font-size(icon, true);
+				top: 0;
+				margin-right: 6px;
+			}
+		}
+
+	}
+
+	&:focus,
+	&:hover {
+		text-decoration: none;
+	}
+
+	// modifiers
+	&.back {
+		&:hover {
+			i {
+				transform: translateX(-10px);
+			}
+		}
+	}
+
+	&.block {
+		transition: color $standard-transition;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+
+	&.no_underline {
+		text-decoration: none !important;
+	}
+
+	// combos
+	&.btn,
+	&.btn:visited,
+	&.btn:link {
+		color: inherit
+	}
+
+}

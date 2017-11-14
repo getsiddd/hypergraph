@@ -1,0 +1,31 @@
+{{#>body title="enduro.js blog"}}
+
+	<div class="jumbotron dark " style="background-image: url('https://s3-eu-west-1.amazonaws.com/enduro.website/direct_uploads/1484571664_blog_bg.jpg'); background-position: 40% center;">
+	</div>
+
+	<div class="page-container">
+		<div class="panel">
+			{{#blog}}
+				{{#each this}}
+					<article class="blog_article_teaser">
+						<div class="article_body">
+							<div class="row">
+								<div class="col-md-4">
+									<img class="img-fluid" src="{{content.teaser.image}}">
+									<div class="wedge-md-down-4x"></div>
+								</div>
+								<div class="col-md-8">
+									<a href="/blog/{{page_slug}}"><h2>{{content.title}}</h2></a>
+									<h5>{{content.date}}</h5>
+									<div class="wedge"></div>
+									{{{content.teaser.abstracted_content.marked_doc}}}
+									<a href="/blog/{{page_slug}}">Read more...</a>
+								</div>
+							</div>
+						</div>
+					</article>
+				{{/each}}
+			{{/blog}}
+		</div>
+	</div>
+{{/body}}

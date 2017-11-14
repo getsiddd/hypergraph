@@ -1,0 +1,39 @@
+{
+  "name": "enduro_website",
+  "version": "1.0.0",
+  "description": "Official website for enduro.js",
+  "repository": "https://github.com/Gottwik/enduro_website",
+  "main": "assets/vendor/enduro/index.js",
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "start": "node_modules/.bin/enduro start"
+  },
+  "author": "Martin Gottweis",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bower": "^1.7.7",
+    "enduro": "1.4.29",
+    "glob": "^7.1.2",
+    "lodash": "^4.17.4",
+    "marked": "^0.3.6",
+    "mongodb": "^2.2.33",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "mongoose": "^4.7.5",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0",
+    "redis": "^2.6.2",
+    "socket.io": "^2.0.3",
+    "socket.io-redis": "^5.1.0",
+    "winston": "^2.2.0"
+  }
+}

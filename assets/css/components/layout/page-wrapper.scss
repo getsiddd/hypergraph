@@ -1,0 +1,38 @@
+.page-wrapper {
+	position: relative;
+
+
+	// modifiers
+	&.colored {
+		background-color: $primary-color;
+		color: $white;
+
+		a {
+			text-decoration: underline;
+		}
+
+		&.secondary {
+			background-color: $secondary-color;
+			color: $black;
+
+			a {
+				color: $primary-color;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&.dark {
+		background-color: $grey;
+		color: $white;
+
+		a {
+			color: $white;
+		}
+
+		.btn {
+			@include no-smooth-font();
+			border-color: $white;
+		}
+	}
+}

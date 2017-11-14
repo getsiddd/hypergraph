@@ -1,0 +1,52 @@
+.btn {
+	@include hoverlink();
+	padding: 7px 30px;
+	background-color: rgba($black, .8);
+	display: inline-block;
+	border-radius: 2px;
+	border: 2px;
+	font-weight: bold;
+	&.margin {
+		margin-top: -5px;
+		margin-bottom: 10px;
+
+		&.small {
+			margin-top: 0;
+			margin-bottom: 0;
+			margin-left: -15px;
+			margin-right: 15px;
+
+			&:before {
+				position: relative;
+				top: 1px;
+			}
+		}
+	}
+
+	// modifiers
+	$accent-button-color: rgba($black, .8);
+	$accent-button-color-hover: rgba($black, 1);
+	&.accent {
+		background-color: rgba($black, .8);
+		border-color: rgba($black, .8);
+		color: $white;
+		&:hover {
+			background-color: rgba($black, 1);
+			border-color: $white;
+		}
+	}
+
+	&.ghost {
+		border: 1px solid $black;
+		background-color: transparent;
+	}
+
+	&.icon {
+		padding-right: 18px;
+	}
+
+	// environments
+	.black & {
+		color: $white !important;
+	}
+}

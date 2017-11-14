@@ -1,0 +1,10 @@
+{
+	"project_name": "enduro website",
+	"project_slug": "ew",
+	"s3": {
+		"bucket": "enduro.website",
+		"region": "eu-west-1",
+		"cloudfront": "d32ujqjov16ho0.cloudfront.net"
+	},
+	"juicebox_enabled": true
+}

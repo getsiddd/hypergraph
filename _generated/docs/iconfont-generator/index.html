@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>enduro.js - Iconfont generators</title>
+
+		<link rel="stylesheet" href="/assets/css/main.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/zenburn.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/assets/img/favicon//manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/assets/img/favicon//ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">		<meta name="description" content="Code-only, no-clicking, flat-file, node.js cms for professionals. With everything needed - Sass, iconfont generator, spritesheet generator, templates...">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-81822746-2', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</head>
+	<body>
+			<div class="wedge-5x"></div>
+			<div class="page-container">
+				<div class="panel">
+		
+					<a class="back" href="/docs"><i class="fa fa-angle-left"></i>Back to topic list</a>
+		
+					<div class="row">
+						<div class="col-md-9">
+							<h1>Iconfont generators</h1>
+							<div class="markdown-block"><p><img src="/assets/img/example_files/makingicons.png" alt="making svg icons"></p>
+		<h2 id="iconfont-generator">Iconfont generator</h2>
+		<p>Just place one icon per file in <code>svg</code> format in <span class="markdown_folder">assets/fonticons</span> . Enduro will process these files and generate an icon font and an associated stylesheet. Finally, all you need to do is include the produced <code>.scss</code> file :</p>
+		<pre><code>@import &#39;../../_generated/_prebuilt/icons&#39;;
+		</code></pre><h3 id="using-generated-iconfont">Using generated iconfont</h3>
+		<p>Once you have included the generated scss file, you can use the icons in two ways:</p>
+		<p><strong>In sass</strong></p>
+		<pre><code class="lang-css">@include icon(user)
+		</code></pre>
+		<p><strong>In html</strong></p>
+		<pre><code>&lt;i class=&quot;icon-user&gt;&lt;/i&gt;
+		</code></pre><h3 id="making-icons">Making icons</h3>
+		<p>I use adobe illustrator to create icons. Check out this <a href="/assets/img/example_files/icons_20.ai">sample file</a>. To export the file, I choose &#39;use artboards&#39; option, which will save as many <code>svg</code> files as there are artboards in the file.</p>
+		<p><img src="/assets/img/example_files/useartboards.png" alt="making svg icons"></p>
+		<p>Thanks to <a href="Gulp-iconfont">https://github.com/nfroidure/gulp-iconfont</a> which enduro uses internally to make all this happen.</p>
+		</div>
+						</div>
+						<div class="col-md-3">
+							<div class="docs-list-placeholder"></div>
+							<ul class="docs-list">
+									<li class="side-menu-item side-menu-iconfont-generator side-level-2">
+										<a href="#iconfont-generator">Iconfont generator</a>
+									</li>
+									<li class="side-menu-item side-menu-using-generated-iconfont side-level-3">
+										<a href="#using-generated-iconfont">Using generated iconfont</a>
+									</li>
+									<li class="side-menu-item side-menu-making-icons side-level-3">
+										<a href="#making-icons">Making icons</a>
+									</li>
+							</ul>
+						</div>
+					</div>
+		
+					<a class="back" href="/docs"><i class="fa fa-angle-left"></i>Back to topic list</a>
+		
+				</div>
+			</div>
+		
+		
+		<script data-main="/assets/js/main.js" src="/assets/vendor/requirejs/require.js"></script>
+	</body>
+
+</html>

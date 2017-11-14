@@ -1,0 +1,66 @@
+{{#>body}}
+	<div class="jumbotron dark top" style="background-image: url('https://static.pexels.com/photos/6471/woman-hand-smartphone-desk-large.jpg')">
+		<div class="veil"></div>
+		<div class="contentbox">
+			<h1>Documentation</h1>
+		</div>
+	</div>
+
+	<div class="page-wrapper colored text-center">
+		<div class="page-container">
+			<div class="wedge-3x"></div>
+			<div class="row">
+
+				<div class="col-md-4">
+					<a class="block no_underline" href="/docs/what-is-enduro">
+						<i class="fa fa-star"></i>
+						<h3>What is enduro</h3>
+						<div class="wedge"></div>
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<a class="block no_underline" href="/docs/hello-world">
+						<i class="fa fa-code"></i>
+						<h3>Hello world</h3>
+						<div class="wedge"></div>
+					</a>
+				</div>
+
+				<div class="col-md-4">
+					<a class="block no_underline" href="/docs/introduction-to-admin">
+						<i class="fa fa-cloud"></i>
+						<h3>Admin interface</h3>
+						<div class="wedge"></div>
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="page-container">
+		<div class="panel">
+			<div class="row wide">
+				{{#grouped_each 3 global.documentation_list}}
+					{{#each this}}
+						<div class="col-md-4">
+							<div class="card">
+								<div class="card-body">
+									<h3 class="short line">{{label}}</h3>
+									<ul>
+										{{#each topics}}
+											<li><a href="/docs/{{slug label}}">{{label}}</a></li>
+										{{/each}}
+									</ul>
+								</div>
+							</div>
+						</div>
+					{{/each}}
+						<div class="wedge"></div>
+				{{/grouped_each}}
+			</div>
+		</div>
+	</div>
+{{/body}}

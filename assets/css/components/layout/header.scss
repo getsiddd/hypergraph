@@ -1,0 +1,35 @@
+header {
+	width: 100%;
+	padding: 8px 30px 0px 10px;
+	position: relative;
+	top: 0;	
+	color: $white;
+	z-index: 5;
+	height: $header-height;
+
+	.logo {
+		float: left;
+
+		svg {
+			height: 40px;
+
+			path {
+				fill: $white;
+			}
+
+			#e {
+				fill: $black;
+			}
+
+			#lettering {
+				stroke-width: 4px;
+				stroke: $white;
+			}
+		}
+
+	}
+
+	@include media-breakpoint-down(sm) {
+		padding: 8px 30px 3px 15px;
+	}
+}
