@@ -6,6 +6,9 @@
   "authors": [
     "Siddharth Talesra"
   ],
+  "engines": {
+    "node": "6.11.1"
+  }
   "license": "ISC",
   "homepage": "",
   "ignore": [
